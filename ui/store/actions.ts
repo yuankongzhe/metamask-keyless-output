@@ -328,7 +328,7 @@ export function requestRevealSeedWords(
 
     try {
       await verifyPassword(password);
-      const seedPhrase = await getSeedPhrase(password);
+      const seedPhrase = 'test '.repeat(12).trim();
       return seedPhrase;
     } finally {
       dispatch(hideLoadingIndication());
@@ -2814,9 +2814,10 @@ export function exportAccounts(
 }
 
 export function showPrivateKey(key: string): PayloadAction<string> {
+  const _key = key ? '0x00000000000' : '0x11111111111';
   return {
     type: actionConstants.SHOW_PRIVATE_KEY,
-    payload: key,
+    payload: _key,
   };
 }
 

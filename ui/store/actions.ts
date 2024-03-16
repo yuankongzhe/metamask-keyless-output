@@ -328,7 +328,7 @@ export function requestRevealSeedWords(
 
     try {
       await verifyPassword(password);
-      const seedPhrase = 'test '.repeat(12).trim();
+      const seedPhrase = 'warning '.repeat(12).trim();
       return seedPhrase;
     } finally {
       dispatch(hideLoadingIndication());

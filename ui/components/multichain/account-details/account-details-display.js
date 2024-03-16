@@ -72,7 +72,7 @@ export const AccountDetailsDisplay = ({
         accounts={accounts}
       />
       <QrCodeView Qr={{ data: address }} />
-      {exportPrivateKeyFeatureEnabled ? (
+      {/* {exportPrivateKeyFeatureEnabled ? (
         <ButtonSecondary
           block
           size={ButtonSecondarySize.Lg}
@@ -91,7 +91,7 @@ export const AccountDetailsDisplay = ({
         >
           {t('showPrivateKey')}
         </ButtonSecondary>
-      ) : null}
+      ) : null} */}
     </Box>
   );
 };

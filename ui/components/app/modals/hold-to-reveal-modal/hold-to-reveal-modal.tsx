@@ -103,7 +103,7 @@ export default function HoldToRevealModal({
   };
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose}>
+    <Modal isOpen={false} onClose={onClose}>
       <ModalOverlay />
       <ModalContent>
         <ModalHeader onClose={onClose}>{t(holdToRevealTitle)}</ModalHeader>
